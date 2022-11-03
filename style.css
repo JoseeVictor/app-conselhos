@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --advice-dice-color: hsl(150, 100%, 66%);
+    --advice-card-color: hsl(217, 19%, 24%);
+    --background-color: hsl(218, 23%, 16%);
+    --text-color: hsl(193, 38%, 86%);
+}
+
+main{
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--advice-card-color);
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.mensagem{
+    width: 360px;
+    font-size: 21px;
+}
+
+.nmr-conselho{
+    color: var(--advice-dice-color);
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.bolinha{
+    width: 60px;
+    height: 60px;
+    background-color:var(--advice-dice-color);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(50%);
+}
+
+.divisor{
+    width: 300px;
+}
+
+.conselho{
+    margin: 10px;
+}
+
+@media(max-width:426px){
+
+.card{
+    width: 300px;
+   padding: 10px;
+}
+
+.conselho{
+    padding: 10px;
+}
+
+}
+
+@media (max-width:326px){
+
+
+.card{
+    width: 260px;
+    padding: 10px;
+}
+
+.conselho{
+ padding: 25px;
+}
+
+
+
+
+
+}
+
+
+
+
